@@ -2,5 +2,4 @@
 
 set-hostname -skip-apply ${component}
 labauto ansible
-ansible-pull -i localhost, -U http://github.com/Gadilasruthilaya/roboshopshell-ansible-v1.git  main.yml -e role_name=rabbitmq -e
- env=${env} &>>/opt/ansible.log
+ansible-pull -i localhost, -U http://github.com/Gadilasruthilaya/roboshopshell-ansible-v1.git  main.yml -e role_name=rabbitmq -e env=${env} &>>/opt/ansible.log
