@@ -50,6 +50,11 @@ resource "aws_instance" "rabbitmq" {
     Name = "${var.component}-${var.env}"
   }, var.tags)
 
+  root_block_device {
+    encrypted = true
+    kms_key_id = var.Kms_id
+  }
+
 }
 
 
